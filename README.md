@@ -17,7 +17,7 @@ This Python program checks if a set of hardware cameras can meet the desired cha
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/clw237/cameras-sufficient.git
-   cd your-repository
+   cd cameras-sufficient
 2. **Run Python Program**:
    ```bash
    python .\cameras-sufficient.py
