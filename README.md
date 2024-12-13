@@ -1,12 +1,12 @@
 # Camera Sufficiency Checker
 
-This Python program checks if a set of hardware cameras can meet the desired characteristics of a software camera based on specified distance and light level ranges. It identifies which camera, if any, is suitable for the given requirements.
+This Python program checks if a set of hardware cameras can meet the desired characteristics of a software camera based on specified distance and light level ranges. It identifies if any of the cameras provided, is suitable for the given requirements.
 
 ## Features
 
 - Determine if any hardware camera can cover the desired subject distance range.
 - Check if any camera can operate within the specified light level range.
-- Return the model name of the first sufficient camera found.
+- Returns True or False if any matching camera is found
 
 ## Requirements
 
@@ -40,15 +40,6 @@ This Python program checks if a set of hardware cameras can meet the desired cha
     Distance limits are from **1.5 meters** to **6.0 meters**, and it operates between **200 lux** and **1200 lux**.
 
 - **Expected Result**:  
-  When the example code is executed, it calls the `find_sufficient_camera` function with the defined distance and light ranges along with the list of hardware cameras. The function checks each camera against the specified requirements:
-  
-  - If a suitable camera is found that meets both the distance and light level criteria, it will print:
-    ```
-    The sufficient camera is: Camera B
-    ```
-    In this case, **Camera B** is suitable because its distance range overlaps with the desired distance range and its light level range also meets the requirements.
-
-  - If no suitable camera is found, it will print:
-    ```
-    No suitable camera found.
-    ```
+  When this code is executed, it checks if any of the listed hardware cameras can meet both the distance and light requirements specified by desired_distance and desired_light. The output will be:
+  ```bash
+  Is the hardware sufficient? True
